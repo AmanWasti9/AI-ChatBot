@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Cooler Master Hyper 212 Black Edition",
+    "price": 49.7,
+    "rpm": [800, 2000],
+    "noise_level": [6.5, 26],
+    "color": "White",
+    "size": 150
+  },
+  {
+    "name": "Cooler Master MASTERLIQUID ML240L RGB V2",
+    "price": 89.99,
+    "rpm": [650, 1800],
+    "noise_level": [6, 27],
+    "color": "Black",
+    "size": 240
+  },
+  {
+    "name": "be quiet! Dark Rock Pro 4",
+    "price": 89.9,
+    "rpm": 1500,
+    "noise_level": [12.8, 24.3],
+    "color": "Black",
+    "size": 100
+  },
+  {
+    "name": "Noctua NH-D15 chromax.black",
+    "price": 119.95,
+    "rpm": [300, 1500],
+    "noise_level": [19.2, 24.6],
+    "color": "Black",
+    "size": 290
+  },
+  {
+    "name": "be quiet! Pure Rock 2 Black",
+    "price": 44,
+    "rpm": 1500,
+    "noise_level": [19.1, 26.8],
+    "color": "Black",
+    "size": 310
+  },
+  {
+    "name": "NZXT Kraken Z73",
+    "price": 284.99,
+    "rpm": [500, 1800],
+    "noise_level": [21, 36],
+    "color": "Black",
+    "size": 360
+  },
+  {
+    "name": "Deepcool AK400",
+    "price": 34.99,
+    "rpm": [500, 1850],
+    "noise_level": 29,
+    "color": "Black / Silver",
+    "size": 250
+  }
+]

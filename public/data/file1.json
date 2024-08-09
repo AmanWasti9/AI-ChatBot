@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Thermaltake Commander FT",
+    "price": 47.05,
+    "channels": 5,
+    "channel_wattage": 10,
+    "pwm": true,
+    "form_factor": 5.25,
+    "color": "Black"
+  },
+  {
+    "name": "Kingwin FPX-001",
+    "price": 9.99,
+    "channels": 4,
+    "channel_wattage": 8,
+    "pwm": false,
+    "form_factor": 3.5,
+    "color": "Silver"
+  },
+  {
+    "name": "NZXT Sentry LX",
+    "price": 35,
+    "channels": 5,
+    "channel_wattage": 6,
+    "pwm": false,
+    "form_factor": [2, 5.25],
+    "color": "White"
+  },
+  {
+    "name": "NZXT Sentry Mix 2",
+    "price": 199.95,
+    "channels": 6,
+    "channel_wattage": 30,
+    "pwm": true,
+    "form_factor": 5.25,
+    "color": "White"
+  },
+  {
+    "name": "Thermaltake AC-001-BN1NAN-A1",
+    "price": 2,
+    "channels": 5,
+    "channel_wattage": 8,
+    "pwm": true,
+    "form_factor": 5.25,
+    "color": "Black"
+  },
+  {
+    "name": "NZXT SENTRY 3",
+    "price": 46,
+    "channels": 5,
+    "channel_wattage": 15,
+    "pwm": true,
+    "form_factor": 5.25,
+    "color": "Silver"
+  },
+  {
+    "name": "Thermaltake Commander F6 RGB",
+    "price": 80,
+    "channels": 6,
+    "channel_wattage": 0.03,
+    "pwm": true,
+    "form_factor": 5.25,
+    "color": "Black"
+  }
+]
