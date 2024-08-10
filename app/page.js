@@ -255,6 +255,8 @@ import {
   HarmBlockThreshold,
 } from "@google/generative-ai";
 import ReactMarkdown from "react-markdown";
+import { getDoc,setDoc, doc } from 'firebase/firestore'
+import { db } from "@/firebase";
 
 export default function Page() {
   const [messages, setMessages] = useState([]);
@@ -297,6 +299,36 @@ export default function Page() {
       threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
     },
   ];
+
+// Function to add the document at the specific path
+async function addfirebase(history) {
+  try {
+      // Specify the document path
+      const docRef = doc(db, "user/IUCIj25jrIaDFm1xyEtv/User History/mXx2ChdjFEeLrhzn7C8a");
+
+      // Set the document at the specified path
+      await setDoc(docRef, history);
+
+      console.log("Document successfully written!");
+  } catch (e) {
+      console.error("Error adding document: ", e);
+  }
+}
+async function getfirebase() {
+    try {
+        const docRef = doc(db, "user/IUCIj25jrIaDFm1xyEtv/User History/mXx2ChdjFEeLrhzn7C8a");
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+            const history = docSnap;
+            console.log("Document data:", docSnap.data());
+            return history;
+        } else {
+            console.log("No such document!");
+        }
+    } catch (e) {
+        console.error("Error getting document: ", e);
+    }
+}
 
   // Fetch JSON data from the API route
   useEffect(() => {
@@ -357,10 +389,16 @@ export default function Page() {
 
         // Log the chat history to verify its structure
         console.log("Chat history being sent:", chatHistory);
+        
+        // Save and update history in firebase
+        const historyin = {history: chatHistory}
+        addfirebase(historyin);
+        const historyarray = (await getfirebase()).data().history;
+        console.log("get firebase: ",historyarray);
 
         // Initialize the chat session with the correct history structure
         const newChat = await model.startChat({
-          history: chatHistory, // Pass the chat history array
+          history: historyarray, // Pass the chat history array
           generationConfig,
           safetySettings,
         });
