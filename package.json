@@ -9,13 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "@google/generative-ai": "^0.16.0",
+    "@mui/material": "^5.16.7",
     "chatbot": "file:",
+    "firebase": "^10.12.5",
     "lunr": "^2.3.9",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-markdown": "^9.0.1"
+    "react-markdown": "^9.0.1",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "eslint": "^8",
